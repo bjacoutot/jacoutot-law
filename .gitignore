@@ -1,0 +1,6 @@
+# WordPress PHP source (not deployed)
+*.php
+functions.php
+README.md
+serve.py
+.DS_Store
