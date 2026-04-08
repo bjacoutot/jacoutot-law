@@ -1187,6 +1187,95 @@ footer {
 }
 
 /* ─────────────────────────────────────────────
+   FEATURED PUBLICATION
+───────────────────────────────────────────── */
+.publication-feature {
+  background: var(--navy);
+  border-top: 3px solid var(--gold);
+  border-bottom: 3px solid var(--gold);
+  padding: 72px 0;
+}
+.publication-feature-inner {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+@media (max-width: 800px) {
+  .publication-feature-inner { grid-template-columns: 1fr; gap: 28px; }
+}
+.publication-meta .label { display: block; margin-bottom: 16px; }
+.publication-journal {
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.35);
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+.publication-title {
+  font-family: var(--serif-display);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 300;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+.publication-title em { font-style: italic; color: var(--gold-lt); }
+.publication-desc {
+  font-size: 0.92rem;
+  line-height: 1.85;
+  color: rgba(255,255,255,0.6);
+  max-width: 680px;
+  margin-bottom: 28px;
+}
+.publication-desc em { font-style: italic; color: rgba(255,255,255,0.75); }
+.publication-authors {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 32px;
+}
+.publication-author-list {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.45);
+}
+.publication-btn { display: inline-block; }
+
+/* publication card (about + blog) */
+.publication-card {
+  background: var(--parchment);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--gold);
+  padding: 28px 32px;
+  margin-bottom: 32px;
+}
+.publication-card .label { margin-bottom: 10px; display: block; }
+.publication-card h3 {
+  font-family: var(--serif-display);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--navy);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.publication-card p {
+  font-size: 0.85rem;
+  line-height: 1.75;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+.publication-card-meta {
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  color: #aaa;
+  margin-bottom: 18px;
+}
+
+/* ─────────────────────────────────────────────
    PRACTICE AREAS PAGE
 ───────────────────────────────────────────── */
 .practice-section {
