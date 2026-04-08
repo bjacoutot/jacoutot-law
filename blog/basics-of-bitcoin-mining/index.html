@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Basics of Bitcoin Mining | Bryan F. Jacoutot</title>
+  <meta name="description" content="Despite serving as the backbone of the Bitcoin ecosystem, the mining process remains one of the more challenging aspects of Bitcoin to understand. Bryan Jacoutot explains." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a class="nav-brand" href="/">
+        <span class="nav-brand__name">Bryan F. Jacoutot</span>
+        <span class="nav-brand__title">Attorney at Law &nbsp;·&nbsp; Clark Hill</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/practice-areas/">Practice Areas</a></li>
+        <li><a href="/legal-blog/">Legal Blog</a></li>
+        <li class="current-menu-item"><a href="/beyond-law/">Beyond Law</a></li>
+        <li><a href="/bitcoin/">Bitcoin</a></li>
+        <li><a class="nav-cta" href="/contact/">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="label">Bitcoin</span>
+    <h1>The Basics of<br><em>Bitcoin Mining</em></h1>
+    <p class="sub">Key concepts behind the process that secures the world's first purely digital monetary system.</p>
+  </div>
+</section>
+
+<section class="blog-body">
+  <div class="container">
+    <div class="blog-layout">
+
+      <article class="entry-content">
+        <p style="font-family:var(--sans); font-size:0.68rem; letter-spacing:0.1em; color:var(--muted); text-transform:uppercase; margin-bottom:40px;">Originally published on <strong>Medium</strong> &nbsp;·&nbsp; March 16, 2022</p>
+
+        <p>Despite serving as the backbone of the Bitcoin ecosystem, the mining process remains one of the more challenging aspects of Bitcoin to understand. The term itself is a metaphor — there is no actual digging involved — but the underlying mechanics are essential to understanding why Bitcoin works at all.</p>
+
+        <h2>What Mining Actually Does</h2>
+
+        <p>Bitcoin mining serves three essential and interrelated functions: it secures the network against attacks, validates transactions, and issues new Bitcoin into circulation. These are not separate processes — they are three outcomes of a single system designed by Satoshi Nakamoto to operate without any central authority.</p>
+
+        <p>The most important of these functions, and the one that is least well understood, is security. Mining prevents what cryptographers call "double spending" — the ability to use the same Bitcoin twice, effectively counterfeiting digital money. This was the fundamental unsolved problem of digital currency before Bitcoin.</p>
+
+        <h2>The Digital Scarcity Problem</h2>
+
+        <p>To understand why mining is necessary, consider the nature of digital information. When you send an email or a text message, you are not actually sending the original — you are sending a copy. The original remains on your device. This is perfectly fine for communication, but it is fatal for digital money. If you could send a copy of a Bitcoin while retaining the original, the currency would be worthless.</p>
+
+        <p>Bitcoin's innovation addresses this problem through mining, which creates computational proof-of-work requirements that make fraud economically expensive — indeed, practically impossible at scale. The system does not rely on trust; it relies on mathematics and energy.</p>
+
+        <h2>How Mining Works</h2>
+
+        <p>Miners compete to solve complex cryptographic puzzles using the SHA-256 algorithm. Before any batch of transactions can be added to the blockchain — Bitcoin's permanent public ledger — a miner must find the solution to this puzzle. The puzzle requires enormous computational effort to solve but is trivial for any participant in the network to verify once solved.</p>
+
+        <p>This asymmetry is the key. Generating a valid solution requires real-world resources — hardware, electricity, time. Cheating requires generating a fraudulent solution faster than the honest network, which would require controlling more than half of all the computing power devoted to Bitcoin mining globally. The economics of this make sustained dishonesty self-defeating: the cost of the attack consistently exceeds any possible benefit.</p>
+
+        <p>If another participant on the network discovers dishonesty, they simply decline to follow the fraudulent transaction update. The network continues on the honest chain, and the attacker has wasted enormous resources for nothing.</p>
+
+        <h2>The Incentive Structure</h2>
+
+        <p>Satoshi Nakamoto designed the reward system to align miners' economic self-interest with the security of the network. Miners who successfully solve the puzzle and add a valid block to the blockchain receive two things: newly created Bitcoin and the transaction fees included in the transactions they validated.</p>
+
+        <p>This creates an elegant mechanism. New Bitcoin enters circulation not through government decree or corporate decision, but through the competitive process of mining — distributed across the globe, open to anyone with the hardware to participate. The supply schedule is fixed in Bitcoin's code: the reward for each new block halves approximately every four years, until all 21 million Bitcoin have been issued.</p>
+
+        <p>The result, as Nakamoto designed it, is the first successful purely digital monetary system in history — one that removes reliance on governmental or institutional trust by replacing it with cryptographic proof and economic incentive.</p>
+
+        <div style="margin-top:48px; padding-top:32px; border-top:1px solid var(--rule);">
+          <a href="/beyond-law/" class="btn-ghost">← Back to Beyond Law</a>
+        </div>
+      </article>
+
+      <aside class="blog-sidebar">
+        <div class="sidebar-section">
+          <h3>About the Author</h3>
+          <p>Bryan F. Jacoutot is a litigation attorney at Clark Hill PLC in Atlanta, Georgia, with a deep technical understanding of Bitcoin and its legal implications.</p>
+          <a class="btn-primary" href="/about/" style="display:inline-block; margin-top:16px;">Full Bio</a>
+        </div>
+        <div class="sidebar-section">
+          <h3>Also Read</h3>
+          <ul>
+            <li onclick="location.href='/blog/adam-smith-bitcoin-wealth-of-worlds/'">On Adam Smith, Bitcoin, and the Wealth of Worlds</li>
+            <li onclick="location.href='/blog/lummis-amendment-bitcoin/'">The Lummis Amendment and Bitcoin Miners</li>
+            <li onclick="location.href='/bitcoin/'">Bitcoin White Paper</li>
+          </ul>
+        </div>
+        <div class="sidebar-section">
+          <h3>Bitcoin Legal Questions?</h3>
+          <p>Bryan advises companies and individuals on regulatory compliance, entity formation, and litigation in the digital asset space.</p>
+          <a class="btn-primary" href="/contact/" style="display:inline-block; margin-top:16px;">Get in Touch</a>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="nav-brand" href="/" style="text-decoration:none;">
+          <span class="nav-brand__name" style="font-size:1.5rem;">Bryan F. Jacoutot</span>
+          <span class="nav-brand__title">Attorney at Law &nbsp;·&nbsp; Clark Hill PLC</span>
+        </a>
+        <p>An Atlanta attorney focusing on election law, cryptocurrency and Bitcoin, and general civil litigation. Member, Clark Hill PLC.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/practice-areas/">Practice Areas</a></li>
+          <li><a href="/legal-blog/">Legal Blog</a></li>
+          <li><a href="/beyond-law/">Beyond Law</a></li>
+          <li><a href="/bitcoin/">Bitcoin White Paper</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:bjacoutot@clarkhill.com">bjacoutot@clarkhill.com</a></li>
+          <li><a href="https://www.clarkhill.com" target="_blank" rel="noopener">Clark Hill PLC</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Bryan F. Jacoutot &nbsp;·&nbsp; All rights reserved</p>
+      <p class="footer-disclaimer">Attorney advertising. The content of this website is provided for informational purposes only and does not constitute legal advice. No attorney-client relationship is formed by your use of this site.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/theme.js"></script>
+</body>
+</html>
