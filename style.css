@@ -811,7 +811,7 @@ body {
    BITCOIN WHITE PAPER PAGE
 ───────────────────────────────────────────── */
 .bitcoin-hero {
-  background: linear-gradient(135deg, #0d1b2a, #1a2f4a);
+  background: var(--navy);
   padding: 140px 0 80px;
   position: relative;
   overflow: hidden;
