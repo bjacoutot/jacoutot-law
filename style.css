@@ -1187,7 +1187,103 @@ footer {
 }
 
 /* ─────────────────────────────────────────────
-   FEATURED PUBLICATION
+   FEATURED SCHOLARSHIP
+───────────────────────────────────────────── */
+.scholarship-feature {
+  background: var(--cream);
+  border-top: 4px solid var(--gold);
+  border-bottom: 1px solid rgba(184,146,42,0.2);
+  padding: 80px 0 88px;
+}
+.scholarship-header {
+  text-align: center;
+  margin-bottom: 52px;
+}
+.scholarship-header .label {
+  display: block;
+  margin-bottom: 12px;
+}
+.scholarship-header h2 {
+  font-family: var(--serif-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  color: var(--navy);
+  line-height: 1.1;
+}
+.scholarship-header h2 em {
+  font-style: italic;
+  color: var(--gold);
+}
+.scholarship-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+@media (max-width: 820px) {
+  .scholarship-grid { grid-template-columns: 1fr; }
+  .scholarship-feature { padding: 60px 0; }
+}
+.scholarship-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.07);
+  border-top: 3px solid var(--gold);
+  padding: 40px 36px 36px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+}
+.scholarship-card-top {
+  margin-bottom: 20px;
+}
+.scholarship-card-top .label {
+  display: block;
+  margin-bottom: 10px;
+}
+.scholarship-venue {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+  font-weight: 600;
+  line-height: 1.6;
+}
+.scholarship-venue-detail {
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.35);
+  margin-top: 3px;
+}
+.scholarship-card-title {
+  font-family: var(--serif-display);
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  font-weight: 400;
+  color: var(--navy);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.scholarship-card-desc {
+  font-size: 0.88rem;
+  line-height: 1.85;
+  color: #444;
+  flex: 1;
+  margin-bottom: 24px;
+}
+.scholarship-card-desc em { font-style: italic; }
+.scholarship-card-meta {
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.35);
+  margin-bottom: 24px;
+}
+.scholarship-btn { display: inline-block; }
+
+/* ─────────────────────────────────────────────
+   FEATURED PUBLICATION (legacy — kept for reference)
 ───────────────────────────────────────────── */
 .publication-feature {
   background: var(--navy);
