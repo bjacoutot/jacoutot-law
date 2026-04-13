@@ -79,7 +79,7 @@ Personal website for **Bryan F. Jacoutot**, litigation attorney at Clark Hill PL
 ## Bryan's Background (for writing copy)
 - Atlanta, Georgia
 - Clark Hill PLC (national firm, 600+ attorneys, 20+ offices)
-- Admitted: Georgia; USDC N.D., M.D., S.D. Ga.; Eleventh Circuit
+- Admitted: Georgia; USDC N.D., M.D. Ga.; Eleventh Circuit
 - Education: B.A. in History, Auburn University (2011); J.D., Georgia State University College of Law (2014)
 - Election law: redistricting, campaign finance, ballot access, constitutional litigation
 - Bitcoin/crypto: studied since early years, wrote for Bitcoin Magazine, Howey Test analysis
