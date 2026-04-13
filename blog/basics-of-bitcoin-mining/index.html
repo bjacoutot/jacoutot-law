@@ -49,35 +49,95 @@
       <article class="entry-content">
         <p style="font-family:var(--sans); font-size:0.68rem; letter-spacing:0.1em; color:var(--muted); text-transform:uppercase; margin-bottom:40px;">Originally published on <strong>Medium</strong> &nbsp;·&nbsp; March 16, 2022</p>
 
-        <p>Despite serving as the backbone of the Bitcoin ecosystem, the mining process remains one of the more challenging aspects of Bitcoin to understand. The term itself is a metaphor — there is no actual digging involved — but the underlying mechanics are essential to understanding why Bitcoin works at all.</p>
+        <p>Despite serving as the backbone of the Bitcoin ecosystem, the "mining" process remains one of the more challenging aspects of Bitcoin to grasp.</p>
 
-        <h2>What Mining Actually Does</h2>
+        <p>To be fair, the concept is not exactly an easy one. It involves intertwining several sophisticated subjects, each of which are difficult to explain standing alone. Still, its bedrock importance to the Bitcoin network makes it a worthy topic to explore.</p>
 
-        <p>Bitcoin mining serves three essential and interrelated functions: it secures the network against attacks, validates transactions, and issues new Bitcoin into circulation. These are not separate processes — they are three outcomes of a single system designed by Satoshi Nakamoto to operate without any central authority.</p>
+        <p>Reader beware (or be relieved): This is not an effort to explain the technical aspects of mining. Rather, it is more of an effort to explain the "why" of mining, and to understand the pipes and the plumbing only from a very high level.</p>
 
-        <p>The most important of these functions, and the one that is least well understood, is security. Mining prevents what cryptographers call "double spending" — the ability to use the same Bitcoin twice, effectively counterfeiting digital money. This was the fundamental unsolved problem of digital currency before Bitcoin.</p>
+        <p>After all, how familiar are you with the technical steps that brought you to this site from your computer or mobile device?</p>
 
-        <h2>The Digital Scarcity Problem</h2>
+        <p>Perhaps you don't question it because it simply works. And because you know why you want it to work. This post endeavors to explore why you might want Bitcoin — and the underlying mining process — to work.</p>
 
-        <p>To understand why mining is necessary, consider the nature of digital information. When you send an email or a text message, you are not actually sending the original — you are sending a copy. The original remains on your device. This is perfectly fine for communication, but it is fatal for digital money. If you could send a copy of a Bitcoin while retaining the original, the currency would be worthless.</p>
+        <p>So let's make a start.</p>
 
-        <p>Bitcoin's innovation addresses this problem through mining, which creates computational proof-of-work requirements that make fraud economically expensive — indeed, practically impossible at scale. The system does not rely on trust; it relies on mathematics and energy.</p>
+        <p>In a nutshell, Bitcoin mining is responsible for three things: (1) Securing the network against attack; (2) validating transactions and adding them to the shared ledger; and (3) issuing currency. It accomplishes the first two tasks by preventing "double spending" on the network and guarding against other fraud-based attacks. The currency issuance aspect serves as both an unbiased and predictable way to distribute Bitcoin into the ecosystem, as well as an incentive mechanism to reward those who undertake the time, effort, and cost associated with carrying out the first two pivotal tasks.</p>
 
-        <h2>How Mining Works</h2>
+        <p>So what is double spending, exactly?</p>
 
-        <p>Miners compete to solve complex cryptographic puzzles using the SHA-256 algorithm. Before any batch of transactions can be added to the blockchain — Bitcoin's permanent public ledger — a miner must find the solution to this puzzle. The puzzle requires enormous computational effort to solve but is trivial for any participant in the network to verify once solved.</p>
+        <p>Double spending is a form of counterfeiting that threatens any economic system. The issuers of the fiat money we use today — nation states and central banks — go to great lengths to prevent counterfeiting and mete out severe punishments against perpetrators. The reason for this is simple: counterfeiting devalues the currency and shakes the users' collective faith in it.</p>
 
-        <p>This asymmetry is the key. Generating a valid solution requires real-world resources — hardware, electricity, time. Cheating requires generating a fraudulent solution faster than the honest network, which would require controlling more than half of all the computing power devoted to Bitcoin mining globally. The economics of this make sustained dishonesty self-defeating: the cost of the attack consistently exceeds any possible benefit.</p>
+        <p>But Bitcoin purports to be a genuinely open and sovereign digital monetary ecosystem. One where there are no supreme third parties or privileged classes to monitor or secure the currency in the way governments and central banks do with our current money supply. Instead, Bitcoin relies on a purely voluntary process called "mining" to do the job. Before attempting to understand how mining works, it's important to understand why it is necessary in the first place.</p>
 
-        <p>If another participant on the network discovers dishonesty, they simply decline to follow the fraudulent transaction update. The network continues on the honest chain, and the attacker has wasted enormous resources for nothing.</p>
+        <h2>Why does Bitcoin need mining?</h2>
 
-        <h2>The Incentive Structure</h2>
+        <p>To address this question, it's helpful to first consider the nature of electronic data generally. You probably don't think about what occurs when you send someone data over the Internet, like an e-mail or text message. But understanding the basics of that process is critical to understanding why Bitcoin needs mining.</p>
 
-        <p>Satoshi Nakamoto designed the reward system to align miners' economic self-interest with the security of the network. Miners who successfully solve the puzzle and add a valid block to the blockchain receive two things: newly created Bitcoin and the transaction fees included in the transactions they validated.</p>
+        <p>Essentially, when you produce an electronic message, you attach any relevant data, click "Send," and the message speeds across the internet, almost instantly transferring to a designated recipient. In many ways, this action appears to largely mirror sending traditional mail through the postal service, except its digital qualities make it faster and cheaper to do. But in reality, the analogy is not as neat as it appears.</p>
 
-        <p>This creates an elegant mechanism. New Bitcoin enters circulation not through government decree or corporate decision, but through the competitive process of mining — distributed across the globe, open to anyone with the hardware to participate. The supply schedule is fixed in Bitcoin's code: the reward for each new block halves approximately every four years, until all 21 million Bitcoin have been issued.</p>
+        <p>When you send e-mails or texts, you're not actually sending a message. Rather, you're sending a copy of a message while the original remains stored on your device or some server you're accessing. This works reasonably well for the purpose of communicating data that doesn't need to be destroyed once sent. But this quirk, which is common to all digital information transfer, is fatal to a digital economic system like Bitcoin where one is attempting to transfer data that also serves as a representation of value.</p>
 
-        <p>The result, as Nakamoto designed it, is the first successful purely digital monetary system in history — one that removes reliance on governmental or institutional trust by replacing it with cryptographic proof and economic incentive.</p>
+        <p>Think about it. If users can simply copy a representation of value and transmit it to another, the value could hardly be considered transferred at all. Indeed, any so-called "digital value" based on our traditional internet transfer protocols is immediately rendered worthless because it is infinitely replicable. Who wants that for their savings?</p>
+
+        <p>The success of Bitcoin, therefore, depended upon solving the thorny problem of creating "digital scarcity" in a system that nobody controls, while using a medium that is geared to unending duplication of data.</p>
+
+        <h2>Out of the Infinite: Digital Scarcity</h2>
+
+        <p>For a long time, the way to work around the problem of infinite data in digital money systems was to appoint some central authority — typically a bank or a third-party company devoted to digital payments (like PayPal or Venmo) — to monitor and secure digital transactions by ensuring that on one end a transaction is debited from an account and on the other end an account is credited.</p>
+
+        <p>This works well enough if you're okay with relying on central third parties, but it undermined the goal of creating a truly independent internet-based currency. To this end, Bitcoin mining offered a unique solution to a longstanding problem.</p>
+
+        <p>To better understand why it is worth adopting the labor and energy intensive process of mining over the centralized third party model, we have to consider the underlying purpose of Bitcoin. If its sole purpose was merely to facilitate digital payments, the trouble of bringing Bitcoin into your life — along with all its inherent volatility and generally poor (though gradually improving) user experience — probably would not be worth it.</p>
+
+        <p>But a message Satoshi attached to the first Bitcoin block during the height of the Great Recession of 2008 offers a glimpse alludes to the true value proposition of the protocol:</p>
+
+        <blockquote>"Chancellor on Brink of Second bailout for banks."</blockquote>
+
+        <p>In this brief message, Bitcoin's pseudonymous creator, Satoshi Nakamoto, articulated its offering to the world: Bitcoin could be a sovereign, digital currency, wholly separate from the legacy system that so often lets the world down. One that is not linked to, controlled by, or dependent upon any national government, central bank, or corporation.</p>
+
+        <p>Put differently — and with American spin — Bitcoin can be described as the first currency in history that is truly of the people, by the people, and for the people.</p>
+
+        <p>Satoshi explained this concept in more detail through an early post describing Bitcoin:</p>
+
+        <blockquote>"The root problem with conventional currency is all the trust that's required to make it work. The central bank must be trusted not to debase the currency, but the history of fiat currencies is full of breaches of that trust. Banks must be trusted to hold our money and transfer it electronically, but they lend it out in waves of credit bubbles with barely a fraction in reserve. We have to trust them with our privacy, [and] trust them not to let identity thieves drain our accounts…"</blockquote>
+
+        <p>How then, could Bitcoin achieve this break from legacy monetary systems and the disadvantages associated with trusting so many disparate and often unaccountable actors? Satoshi turned, in part, to the process of "mining."</p>
+
+        <p>Think again to the double spending issue.</p>
+
+        <p>Satoshi needed to develop a process so that, unlike email and digital data transfer generally, the Bitcoin currency could not be copied. If he could not, the currency would prove worthless. And any time it arbitrarily gained any value, it would be repeatedly copied until that value was erased.</p>
+
+        <p>So, how did he do it?</p>
+
+        <h2>The How of Bitcoin Mining</h2>
+
+        <p>Bitcoin mining blends a series of prior cryptographic breakthroughs to create a system whereby any transaction on the protocol would require a certain amount of computing time and energy to verify. To accomplish, this the protocol requires each update to the ledger to be accompanied by what is effectively an elaborate puzzle solution. Satoshi selected military grade encryption algorithm, SHA-256, to create these elaborate puzzles.</p>
+
+        <p>He also designed the system so that every willing participant on the network could (and should) hold a copy of every transaction that ever occurred. Although this act of creating an unending log of transactions had no name at the time Bitcoin launched, today we know it as a blockchain.</p>
+
+        <p>Utilizing this method was the only way that a truly open and independent economic system could track transactions and prevent double-spending in the absence of a controlling or privileged party. Otherwise, a central authority would need to be appointed, which would rob Bitcoin of its independence, and subsequently, its value.</p>
+
+        <p>In order to successfully confirm a transaction on the Bitcoin network and update the log, mining requires the participants to go through a series of steps. Not only would they verify that the sender had their account debited and a corresponding amount was deposited with the recipient, but before doing so the transaction updater (miner) would also have to solve a cryptographic puzzle using the SHA-256 algorithm. Solving this puzzle takes time, energy, and computing power.</p>
+
+        <p>While this process may seem trivial, or perhaps even wasteful, requiring this solution before the transaction log could be updated meant that the miner would need to spend value (through time, energy, and computational power). This expenditure of value makes it economically costly to lie about the transaction. If another participant discovered the dishonesty, they could simply decline to follow the transaction update, and go about their own update, thus robbing the dishonest participant of the value they expended solving the mining puzzle.</p>
+
+        <p>In short, Bitcoin discourages rogue users from attacking the protocol through fraudulent spending by making it extremely expensive to lie, and very easy to be caught.</p>
+
+        <p>As an added protection, Satoshi designed the protocol so that when computers were solving puzzles too quickly (either because they became more advanced or because more participants were joining the network), the difficulty level of the puzzle would increase. Conversely, if puzzles were solved too slowly, the difficulty would decrease. The result being that blocks are added at a predictable rate (roughly every ten minutes), and the security of the network increases as more participants join.</p>
+
+        <p>This was a good start, but more was needed than just "the stick," to incentivize honest behavior. Satoshi needed a carrot.</p>
+
+        <p>To accomplish this, Satoshi devised a reward system that would grant the successful miner (i.e. the one who solved the puzzle first and updated the transaction log) newly minted Bitcoin and transaction fees for securing the network and confirming the transactions. Beyond rewarding the miner for their efforts, this had the added effect of acting as an unbiased, predictable way to issue new currency into the ecosystem without relying on some central supreme currency issuer. Satoshi put it this way early on:</p>
+
+        <blockquote>"[I]ndeed there is nobody to act as central bank or federal reserve to adjust the money supply as the population of users grows. That would have required a trusted party to determine the value, because I don't know a way for software to know the real world value of things. If there was some clever way, or if we wanted to trust someone to actively manage the money supply to peg it to something, the rules could have been programmed for that."</blockquote>
+
+        <p>As we look around the world today and see nations and central banks manipulating their currencies in a frantic attempt to establish some sort of artificial monetary equilibrium, the wisdom of this decision by Satoshi to remove currency control from a human third party is becoming more apparent.</p>
+
+        <p>Thus, through the process of Bitcoin mining, Satoshi was able to prevent double-spending for the first time without any central authority controlling the ledger of transactions. On top of that, he also instituted a programmatic monetary policy and issuance rate that cannot be altered.</p>
+
+        <p>Marking what is the first successful purely digital monetary system in history, mining finally removed the need for national governments and central banks to shepherd currency through complex and often shortsighted policy whims, opting instead to place the future of money in the unflinching hands of code and human self-interest.</p>
+
+        <p style="font-family:var(--sans); font-size:0.75rem; color:var(--muted); margin-top:40px;"><em>Note: A version of this article was originally published on November 29, 2020.</em></p>
 
         <div style="margin-top:48px; padding-top:32px; border-top:1px solid var(--rule);">
           <a href="/beyond-law/" class="btn-ghost">← Back to Beyond Law</a>
