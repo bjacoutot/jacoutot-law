@@ -1,39 +1,125 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">
-  <!-- Central beam / top crossbar -->
-  <rect x="196" y="60" width="8" height="280" fill="#b8922a"/>
-  <rect x="100" y="90" width="200" height="7" rx="3.5" fill="#b8922a"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" fill="none">
 
-  <!-- Top finial -->
-  <circle cx="200" cy="58" r="10" fill="#b8922a"/>
-  <rect x="196" y="30" width="8" height="30" fill="#b8922a"/>
-  <circle cx="200" cy="26" r="7" fill="#b8922a"/>
+  <!-- ═══ ORNATE TIERED BASE ═══ -->
+  <!-- Decorative feet -->
+  <ellipse cx="148" cy="500" rx="30" ry="10" fill="#b8922a"/>
+  <ellipse cx="272" cy="500" rx="30" ry="10" fill="#b8922a"/>
+  <!-- Foot connectors -->
+  <rect x="148" y="490" width="124" height="12" rx="6" fill="#b8922a"/>
+  <!-- Lower platform -->
+  <rect x="115" y="478" width="190" height="14" rx="7" fill="#b8922a"/>
+  <!-- Decorative groove line -->
+  <rect x="122" y="473" width="176" height="6" rx="3" fill="#b8922a"/>
+  <!-- Middle tier -->
+  <rect x="135" y="460" width="150" height="15" rx="7.5" fill="#b8922a"/>
+  <!-- Decorative groove line -->
+  <rect x="143" y="455" width="134" height="6" rx="3" fill="#b8922a"/>
+  <!-- Upper tier -->
+  <rect x="155" y="443" width="110" height="14" rx="7" fill="#b8922a"/>
+  <!-- Post stem to base -->
+  <rect x="196" y="375" width="8" height="70" fill="#b8922a"/>
 
-  <!-- Base -->
-  <rect x="150" y="338" width="100" height="8" rx="4" fill="#b8922a"/>
-  <rect x="170" y="346" width="60" height="6" rx="3" fill="#b8922a"/>
-  <rect x="130" y="352" width="140" height="10" rx="5" fill="#b8922a"/>
-  <rect x="110" y="362" width="180" height="8" rx="4" fill="#b8922a"/>
+  <!-- ═══ CENTRAL POST ═══ -->
+  <rect x="196" y="70" width="8" height="305" fill="#b8922a"/>
 
-  <!-- Left chain -->
-  <line x1="100" y1="93" x2="80" y2="200" stroke="#b8922a" stroke-width="3" stroke-linecap="round"/>
-  <!-- Right chain -->
-  <line x1="300" y1="93" x2="320" y2="200" stroke="#b8922a" stroke-width="3" stroke-linecap="round"/>
+  <!-- ═══ ORNATE MULTI-TIER FINIAL ═══ -->
+  <!-- Wide base collar -->
+  <ellipse cx="200" cy="70" rx="17" ry="7" fill="#b8922a"/>
+  <!-- First neck -->
+  <rect x="197" y="50" width="6" height="22" fill="#b8922a"/>
+  <!-- Mid collar -->
+  <ellipse cx="200" cy="50" rx="13" ry="5.5" fill="#b8922a"/>
+  <!-- Second neck -->
+  <rect x="198" y="34" width="4" height="18" fill="#b8922a"/>
+  <!-- Upper collar -->
+  <ellipse cx="200" cy="34" rx="10" ry="4.5" fill="#b8922a"/>
+  <!-- Thin top neck -->
+  <rect x="198.5" y="18" width="3" height="18" fill="#b8922a"/>
+  <!-- Top orb -->
+  <circle cx="200" cy="16" r="10" fill="#b8922a"/>
+  <!-- Apex pip -->
+  <circle cx="200" cy="6" r="5" fill="#b8922a"/>
 
-  <!-- Left pan -->
-  <path d="M40 200 Q80 230 120 200" stroke="#b8922a" stroke-width="4" stroke-linecap="round" fill="none"/>
-  <line x1="40" y1="200" x2="40" y2="204" stroke="#b8922a" stroke-width="3"/>
-  <line x1="120" y1="200" x2="120" y2="204" stroke="#b8922a" stroke-width="3"/>
+  <!-- ═══ CROSSBAR ═══ -->
+  <!-- Main bar -->
+  <rect x="84" y="90" width="232" height="9" rx="4.5" fill="#b8922a"/>
+  <!-- Left end orb -->
+  <circle cx="84" cy="94" r="14" fill="#b8922a"/>
+  <!-- Left end inner ring -->
+  <circle cx="84" cy="94" r="8" fill="#b8922a" opacity="0.3"/>
+  <!-- Right end orb -->
+  <circle cx="336" cy="94" r="14" fill="#b8922a"/>
+  <!-- Right end inner ring -->
+  <circle cx="336" cy="94" r="8" fill="#b8922a" opacity="0.3"/>
+  <!-- Central pivot medallion -->
+  <circle cx="200" cy="94" r="20" fill="#b8922a"/>
+  <circle cx="200" cy="94" r="13" fill="#b8922a" opacity="0.35"/>
+  <circle cx="200" cy="94" r="7" fill="#b8922a"/>
 
-  <!-- Right pan (slightly lower for realism) -->
-  <path d="M280 207 Q320 237 360 207" stroke="#b8922a" stroke-width="4" stroke-linecap="round" fill="none"/>
-  <line x1="280" y1="207" x2="280" y2="211" stroke="#b8922a" stroke-width="3"/>
-  <line x1="360" y1="207" x2="360" y2="211" stroke="#b8922a" stroke-width="3"/>
+  <!-- ═══ LEFT CHAIN — alternating oval links ═══ -->
+  <!-- From crossbar left (84,104) descending to pan ring (72,216) -->
+  <ellipse cx="83" cy="107" rx="6.5" ry="3.5" fill="#b8922a"/>
+  <ellipse cx="82" cy="118" rx="3.5" ry="6.5" fill="#b8922a"/>
+  <ellipse cx="81" cy="130" rx="6.5" ry="3.5" fill="#b8922a"/>
+  <ellipse cx="80" cy="141" rx="3.5" ry="6.5" fill="#b8922a"/>
+  <ellipse cx="79" cy="153" rx="6.5" ry="3.5" fill="#b8922a"/>
+  <ellipse cx="78" cy="164" rx="3.5" ry="6.5" fill="#b8922a"/>
+  <ellipse cx="77" cy="176" rx="6.5" ry="3.5" fill="#b8922a"/>
+  <ellipse cx="76" cy="187" rx="3.5" ry="6.5" fill="#b8922a"/>
+  <ellipse cx="75" cy="199" rx="6.5" ry="3.5" fill="#b8922a"/>
+  <ellipse cx="74" cy="210" rx="3.5" ry="6.5" fill="#b8922a"/>
 
-  <!-- Left pan suspension lines -->
-  <line x1="80" y1="200" x2="40" y2="200" stroke="#b8922a" stroke-width="2.5"/>
-  <line x1="80" y1="200" x2="120" y2="200" stroke="#b8922a" stroke-width="2.5"/>
+  <!-- ═══ RIGHT CHAIN — alternating oval links ═══ -->
+  <!-- From crossbar right (336,104) descending to pan ring (348,224) -->
+  <ellipse cx="337" cy="107" rx="6.5" ry="3.5" fill="#b8922a"/>
+  <ellipse cx="338" cy="118" rx="3.5" ry="6.5" fill="#b8922a"/>
+  <ellipse cx="339" cy="130" rx="6.5" ry="3.5" fill="#b8922a"/>
+  <ellipse cx="340" cy="141" rx="3.5" ry="6.5" fill="#b8922a"/>
+  <ellipse cx="341" cy="153" rx="6.5" ry="3.5" fill="#b8922a"/>
+  <ellipse cx="342" cy="164" rx="3.5" ry="6.5" fill="#b8922a"/>
+  <ellipse cx="343" cy="176" rx="6.5" ry="3.5" fill="#b8922a"/>
+  <ellipse cx="344" cy="187" rx="3.5" ry="6.5" fill="#b8922a"/>
+  <ellipse cx="345" cy="199" rx="6.5" ry="3.5" fill="#b8922a"/>
+  <ellipse cx="346" cy="210" rx="3.5" ry="6.5" fill="#b8922a"/>
 
-  <!-- Right pan suspension lines -->
-  <line x1="320" y1="200" x2="280" y2="207" stroke="#b8922a" stroke-width="2.5"/>
-  <line x1="320" y1="200" x2="360" y2="207" stroke="#b8922a" stroke-width="2.5"/>
+  <!-- ═══ LEFT PAN ═══ -->
+  <!-- Suspension ring -->
+  <circle cx="72" cy="218" r="9" fill="#b8922a"/>
+  <!-- Two suspension arms to pan rim -->
+  <line x1="64" y1="218" x2="24" y2="230" stroke="#b8922a" stroke-width="4" stroke-linecap="round"/>
+  <line x1="80" y1="218" x2="120" y2="230" stroke="#b8922a" stroke-width="4" stroke-linecap="round"/>
+  <!-- Outer pan bowl -->
+  <path d="M20 232 Q72 278 124 232" stroke="#b8922a" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+  <!-- Inner decorative rim -->
+  <path d="M30 236 Q72 276 114 236" stroke="#b8922a" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <!-- Pan side returns -->
+  <line x1="20" y1="232" x2="20" y2="238" stroke="#b8922a" stroke-width="5" stroke-linecap="round"/>
+  <line x1="124" y1="232" x2="124" y2="238" stroke="#b8922a" stroke-width="5" stroke-linecap="round"/>
+  <!-- Decorative rivets along rim -->
+  <circle cx="34" cy="234" r="3.5" fill="#b8922a"/>
+  <circle cx="52" cy="248" r="3.5" fill="#b8922a"/>
+  <circle cx="72" cy="253" r="3.5" fill="#b8922a"/>
+  <circle cx="92" cy="248" r="3.5" fill="#b8922a"/>
+  <circle cx="110" cy="234" r="3.5" fill="#b8922a"/>
+
+  <!-- ═══ RIGHT PAN (lower — classic unbalanced pose) ═══ -->
+  <!-- Suspension ring -->
+  <circle cx="348" cy="226" r="9" fill="#b8922a"/>
+  <!-- Two suspension arms -->
+  <line x1="340" y1="226" x2="300" y2="238" stroke="#b8922a" stroke-width="4" stroke-linecap="round"/>
+  <line x1="356" y1="226" x2="396" y2="238" stroke="#b8922a" stroke-width="4" stroke-linecap="round"/>
+  <!-- Outer pan bowl -->
+  <path d="M296 240 Q348 286 400 240" stroke="#b8922a" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+  <!-- Inner decorative rim -->
+  <path d="M306 244 Q348 284 390 244" stroke="#b8922a" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <!-- Pan side returns -->
+  <line x1="296" y1="240" x2="296" y2="246" stroke="#b8922a" stroke-width="5" stroke-linecap="round"/>
+  <line x1="400" y1="240" x2="400" y2="246" stroke="#b8922a" stroke-width="5" stroke-linecap="round"/>
+  <!-- Decorative rivets -->
+  <circle cx="310" cy="242" r="3.5" fill="#b8922a"/>
+  <circle cx="328" cy="256" r="3.5" fill="#b8922a"/>
+  <circle cx="348" cy="261" r="3.5" fill="#b8922a"/>
+  <circle cx="368" cy="256" r="3.5" fill="#b8922a"/>
+  <circle cx="386" cy="242" r="3.5" fill="#b8922a"/>
+
 </svg>
