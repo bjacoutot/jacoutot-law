@@ -914,39 +914,29 @@ body {
   background: var(--cream);
   padding: 80px 0 100px;
 }
-.contact-grid {
+.contact-centered {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.contact-info-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 1px solid var(--rule);
+  background: var(--white);
+  margin-bottom: 48px;
 }
-@media (max-width: 800px) { .contact-grid { grid-template-columns: 1fr; gap: 40px; } }
-
-.contact-left .label { margin-bottom: 16px; }
-.contact-left h2 {
-  font-family: var(--serif-display);
-  font-size: 2.6rem;
-  font-weight: 300;
-  color: var(--navy);
-  line-height: 1.1;
-  margin-bottom: 24px;
+@media (max-width: 700px) {
+  .contact-info-grid { grid-template-columns: 1fr; }
 }
-.contact-left h2 em { font-style: italic; color: var(--gold); }
-.contact-left p {
-  font-size: 0.92rem;
-  line-height: 1.85;
-  color: var(--muted);
-  margin-bottom: 36px;
-}
-
-.contact-detail {
+.contact-info-block {
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  padding: 20px 0;
-  border-bottom: 1px solid var(--rule);
+  padding: 28px 24px;
+  border-right: 1px solid var(--rule);
 }
-.contact-detail:first-of-type { border-top: 1px solid var(--rule); }
+.contact-info-block:last-child { border-right: none; }
 .contact-icon {
   width: 36px;
   height: 36px;
@@ -976,18 +966,36 @@ body {
   text-decoration: none;
 }
 .contact-detail-text a:hover { text-decoration: underline; }
-
-.contact-right {
-  background: var(--white);
-  border: 1px solid var(--rule);
-  padding: 44px;
+.contact-cta-block {
+  text-align: center;
+  padding: 48px 0 40px;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 40px;
 }
-.contact-right h3 {
-  font-family: var(--serif-display);
-  font-size: 1.6rem;
-  font-weight: 400;
+.contact-cta-block p {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--muted);
+  max-width: 560px;
+  margin: 0 auto 28px;
+}
+.contact-notice {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  line-height: 1.75;
+  color: var(--muted);
+  padding: 20px 24px;
+  background: var(--parchment);
+  border-left: 3px solid var(--gold);
+}
+.contact-notice strong {
+  display: block;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
   color: var(--navy);
-  margin-bottom: 28px;
+  font-size: 0.62rem;
 }
 
 .form-group { margin-bottom: 22px; }
