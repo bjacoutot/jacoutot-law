@@ -49,39 +49,37 @@
       <article class="entry-content">
         <p style="font-family:var(--sans); font-size:0.68rem; letter-spacing:0.1em; color:var(--muted); text-transform:uppercase; margin-bottom:40px;">Originally published on <strong>Medium</strong> &nbsp;·&nbsp; August 5, 2021</p>
 
-        <p>The infrastructure bill working its way through Congress in the summer of 2021 contained a provision that sent shockwaves through the Bitcoin and cryptocurrency communities: a definition of "broker" broad enough to potentially classify Bitcoin miners, node operators, and software developers as brokers subject to strict IRS reporting requirements, including know-your-customer obligations.</p>
+        <p>The Congress will soon vote on a massive and broadly supported bipartisan infrastructure bill spanning 2,700 pages. Tucked away in this bill is a short provision relating to so-called "brokers" in digital assets. Brokers are subject to significant self-reporting and KYC requirements under the Internal Revenue Code, among other statutory and regulatory obligations.</p>
 
-        <p>The Lummis amendment — proposed by Sen. Cynthia Lummis along with co-sponsors — was designed to fix the problem by carving out those who validate distributed ledger transactions. The intent was right. But the technical execution may fall short of the goal.</p>
+        <p>The bill in its current form threatens to add Bitcoin miners to the definition of "broker" — and foist upon them the severe regulatory burdens associated with that designation — because it will now include "any person who (for consideration) is responsible for regularly providing any service for effectuating transfers of digital assets on behalf of another person." Bitcoin observers and others from across the cryptocurrency spectrum quickly realized that this could include just about anyone interacting with the crypto space.</p>
 
-        <h2>The Problem with the Original Language</h2>
+        <p><strong>In short: it is a broad scale license to surveil.</strong></p>
 
-        <p>The infrastructure bill's original broker definition was extraordinarily broad. Applied literally, it would have required miners, node operators, and even software wallet developers to collect and report identifying information about their users — an impossible task for most, and a fundamental misunderstanding of how Bitcoin actually works.</p>
+        <p>Following significant pushback from the industry, United States Senators Lummis, Wyden and Toomey introduced an amendment hoping to rectify the situation. And in large part, it goes a long way to doing that. But on closer examination, the language may fall short of protecting Bitcoin miners and other PoW-based chains.</p>
 
-        <p>The digital asset community recognized the threat quickly and lobbied hard for a fix. The Lummis amendment emerged as the bipartisan solution, exempting those who perform services "for validating distributed ledger transactions."</p>
+        <p>Below is a snapshot of the relevant text of the amendment.</p>
 
-        <h2>The Technical Gap</h2>
+        <img src="/images/lummis-amendment-text.png" alt="Lummis amendment text showing Rule of Construction and definition of broker" class="article-image" />
 
-        <p>Here is the problem: miners do not actually validate transactions alone. Under Bitcoin's protocol, transactions are validated by the collective action of the majority of nodes on the network. Each node independently verifies every block against the protocol rules. Miners propose blocks by solving the proof-of-work puzzle — they do not unilaterally validate anything. Validation is a network-wide function, not a miner function.</p>
+        <p>As you can see, it really limits the protection to those who are "validating distributed ledger transactions." Ostensibly, this is meant to protect bitcoin miners who are often characterized as transaction validators because they "update the chain." But is that really what they do?</p>
 
-        <p>This distinction matters legally. If a court or the IRS reads "validating distributed ledger transactions" according to Bitcoin's technical architecture, miners may not fall within the exemption — because miners, strictly speaking, don't validate. They mine. Nodes validate. The Lummis language conflates two distinct roles in the Bitcoin protocol.</p>
+        <p>Looking at the bitcoin protocol and how it actually updates reveals a wrinkle in the amendment language that could inadvertently remove bitcoin miners from the protections of the amendment. Here's why.</p>
 
-        <p>This is precisely the kind of drafting gap that occurs when legislators work from a general understanding of blockchain rather than Bitcoin's specific technical design. The intent to exempt miners is clear. Whether the language achieves it is not.</p>
+        <p>When miners add a block of transactions to the bitcoin blockchain, they bundle recent transactions and then attach a cryptographic nonce (or puzzle solution) demonstrating they engaged in the required amount of computational work. At best, this might be considered sufficient to begin the process of validating transactions, but it does not "validate" transactions any more than any individual full node on the network does.</p>
 
-        <h2>Proposed Fixes</h2>
+        <p>Instead, transactions are validated by the collective acts of the majority of nodes on the bitcoin network, with each accomplishing their own validation of transactions and each independently accepting the miner's proposed block. This process is what truly "updates" the chain in a technical sense. And this is why Full Nodes download the entire blockchain in the first place. In other words, a miner can neither update nor validate the chain by itself. It requires the agreement and independent verification of the broader full node community to go forward.</p>
 
-        <p>Two amendments to the amendment would substantially improve the protection for Bitcoin miners and other proof-of-work participants.</p>
+        <p>These are critical gaps between the operation of the legal language contained the Lummis amendment, and the reality of how the bitcoin protocol functions. And it may completely remove bitcoin miners from the protection of the amendment.</p>
 
-        <p>First, the exemption language should be expanded to include those performing "proof-of-work" computations essential to blockchain security. This directly captures what miners do — expend computational work to propose valid blocks — without relying on the legally ambiguous term "validating."</p>
+        <p>The good news is these gaps can be quickly and simply fixed by adding the following language to the amendment:</p>
 
-        <p>Second, the exemption should cover entities operating multiple business lines that include mining. A company that mines Bitcoin and also provides wallet services should not lose its mining exemption because of the ancillary service. As drafted, the amendment may inadvertently create a trap for integrated businesses.</p>
+        <img src="/images/lummis-proposed-fix-subsection-a.png" alt="Proposed fix: validating distributed ledger transactions or otherwise proposing updates to the transaction history of the distributed ledger" class="article-image" />
 
-        <h2>The Broader Lesson</h2>
+        <p>Beyond this small but necessary change, it would be wise to adjust the definition of broker with the proposed language below so as to ensure it exempts from the definition those who operate multiple business lines beyond just mining (i.e. Mining and Wallet providers).</p>
 
-        <p>This episode illustrates a recurring problem in cryptocurrency regulation: legislative language drafted without precise technical understanding of the underlying protocol can create unintended — and sometimes severe — consequences for participants in the ecosystem.</p>
+        <img src="/images/lummis-proposed-fix-broker-definition.png" alt="Proposed fix to broker definition language" class="article-image" />
 
-        <p>Bitcoin miners, node operators, and developers are not brokers in any meaningful sense. They do not know their users' identities, they cannot freeze or reverse transactions, and they have no relationship with the parties to the transactions they process. Applying broker regulations to them would be both technically incoherent and practically unworkable.</p>
-
-        <p>The Lummis amendment is a well-intentioned step toward the right outcome. But the precision of the language matters — and in this case, getting the words right requires understanding exactly how Bitcoin's protocol assigns roles among miners, nodes, and the broader network.</p>
+        <p>These changes are simple and relatively neat. They do not disturb the substance of the bill except to ensure the amendment accomplishes its intended purpose.</p>
 
         <div style="margin-top:48px; padding-top:32px; border-top:1px solid var(--rule);">
           <a href="/legal-blog/" class="btn-ghost">← Back to Legal Blog</a>

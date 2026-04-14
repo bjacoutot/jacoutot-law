@@ -1518,3 +1518,10 @@ footer {
   color: var(--muted);
   background: var(--parchment);
 }
+.article-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 32px 0;
+  border: 1px solid var(--rule);
+}
